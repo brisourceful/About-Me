@@ -1,0 +1,15 @@
+h1 {
+  font-family: 'Cantata One', serif;
+  text-align: center;
+  border: solid 1px;
+}
+
+p {
+  font-family: 'PT Serif Caption', serif;
+
+}
+
+.titlebackground{
+  background-color: #ff5252;
+
+}
