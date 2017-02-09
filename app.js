@@ -45,3 +45,56 @@ if (quizResponseFive === 'n' || quizResponseFive === 'no'){
 } else {
   console.log ('Are you nuts?? That stuff is vile and she does not like it.');
 }
+
+var quizResponseSix = prompt('Please Answer with a Number i.e. 1, 10, 100. How many Pokemon has Brianna caught?');
+
+var numberAnswer = '131';
+
+for (var i = 0; i < 4; i++) {
+  if (quizResponseSix === numberAnswer){
+    confirm('Wow! You guessed right! You must be a Pokemon Master!');
+  }
+
+  else if (quizResponseSix > numberAnswer) {
+    quizResponseSix = prompt('That\'s too high! I\'m not a Pokemon Master yet.');
+  }
+
+  else {
+    quizResponseSix = prompt('That\s too low! I\'ve got more Pokemon than that.');
+  }
+}
+
+var quizResponseSeven = prompt('Please Answer with multiple choice. What states has Brianna lived in besides Washington?');
+
+statesArray = ['California', 'New York', 'Massachusetts'];
+
+for (var i = 0; i < 6; i++) {
+
+
+}
+
+// var names = ['Adam', 'Amanda', 'Mika'];
+//
+// for (i = 0; i < names.length; i ++) {
+//   console.log('index of loop:' + i);
+//   console.log('Name at index:' + names[i]);
+//   var currentName = names[i];
+//
+//   if (currentName === 'Amanda') {
+//     console.log('This is Amanda!');
+//   }
+//
+// }
+//
+// var i =0;
+// while (i < names.length) {
+//   for (i = 0; i < names.length; i ++) {
+//     console.log('index of loop:' + i);
+//     console.log('Name at index:' + names[i]);
+//     var currentName = names[i];
+//
+//     if (currentName === 'Amanda') {
+//       console.log('This is Amanda!');
+//     }
+//   i++;
+// }

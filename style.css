@@ -1,15 +1,23 @@
 h1 {
-  font-family: 'Cantata One', serif;
+  font-family: 'Cormorant SC', serif;
   text-align: center;
   border: solid 1px;
+  font-size: 56px
 }
 
 p {
-  font-family: 'PT Serif Caption', serif;
+  font-family: 'Cormorant Infant', serif;
+  font-size: 20px;
 
 }
 
 .titlebackground{
   background-color: #ff5252;
+
+}
+
+ul {
+  font-family: 'Cormorant Infant', serif;
+  font-size: 20px;
 
 }
