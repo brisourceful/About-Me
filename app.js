@@ -32,14 +32,16 @@ function questionB(){
   }
 };
 
-var quizResponseThree = prompt('Please Answer with Yes or No. Has Brianna travelled to Mexico?').toLowerCase();
+function questionC(){
+  var quizResponseThree = prompt('Please Answer with Yes or No. Has Brianna travelled to Mexico?').toLowerCase();
+  if (quizResponseThree === 'n' || quizResponseThree === 'no'){
+    console.log('Good guess! She has not been to Mexico...yet.');
+    score++;
+  } else {
+    console.log ('Sorry! She hasn\'t been to Mexico.');
+  }
+};
 
-if (quizResponseThree === 'n' || quizResponseThree === 'no'){
-  console.log('Good guess! She has not been to Mexico...yet.');
-  score++;
-} else {
-  console.log ('Sorry! She hasn\'t been to Mexico.');
-}
 var quizResponseFour = prompt('Please Answer with Yes or No. Did Brianna live in Thailand?').toLowerCase();
 
 if (quizResponseFour === 'y' || quizResponseFour === 'yes'){
