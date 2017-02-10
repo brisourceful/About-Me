@@ -62,6 +62,7 @@ for (var i = 0; i < 4; i++) {
   if (quizResponseSix === numberAnswer){
     confirm('Wow! You guessed right! You must be a Pokemon Master!');
     score++;
+    break;
   }
 
   else if (quizResponseSix > numberAnswer) {
@@ -106,7 +107,7 @@ confirm('You got ' + score + ' out of 7 correct, ' + username + '. Thanks for pl
 //   }
 //
 // }
-// 
+//
 // var i =0;
 // while (i < names.length) {
 //   for (i = 0; i < names.length; i ++) {
