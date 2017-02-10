@@ -108,8 +108,15 @@ function questionG(){
   }
 };
 
-confirm('You got ' + score + ' out of 7 correct, ' + username + '. Thanks for playing!');
+questionA();
+questionB();
+questionC();
+questionD();
+questionE();
+questionF();
+questionG();
 
+confirm('You got ' + score + ' out of 7 correct, ' + username + '. Thanks for playing!');
 // var names = ['Adam', 'Amanda', 'Mika'];
 //
 // for (i = 0; i < names.length; i ++) {
