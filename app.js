@@ -53,22 +53,23 @@ if (quizResponseFive === 'n' || quizResponseFive === 'no'){
   console.log ('Are you nuts?? That stuff is vile and she does not like it.');
 }
 
-var quizResponseSix = prompt('Please Answer with a Number i.e. 1, 10, 100. How many Pokemon has Brianna caught?');
+var quizResponseSix = parseInt(prompt('Please Answer with a Number i.e. 1, 10, 100. How many Pokemon has Brianna caught?'));
 
-var numberAnswer = '131';
+var numberAnswer = 131;
 
 for (var i = 0; i < 4; i++) {
+  console.log(typeof quizResponseSix);
   if (quizResponseSix === numberAnswer){
     confirm('Wow! You guessed right! You must be a Pokemon Master!');
     score++;
   }
 
   else if (quizResponseSix > numberAnswer) {
-    quizResponseSix = prompt('That\'s too high! I\'m not a Pokemon Master yet. Guess again.');
+    quizResponseSix = parseInt(prompt('That\'s too high! I\'m not a Pokemon Master yet. Guess again.'));
   }
 
   else {
-    quizResponseSix = prompt('That\s too low! I\'ve got more Pokemon than that. Guess again.');
+    quizResponseSix = parseInt(prompt('That\s too low! I\'ve got more Pokemon than that. Guess again.'));
   }
 }
 
@@ -105,7 +106,7 @@ confirm('You got ' + score + ' out of 7 correct, ' + username + '. Thanks for pl
 //   }
 //
 // }
-//
+// 
 // var i =0;
 // while (i < names.length) {
 //   for (i = 0; i < names.length; i ++) {
