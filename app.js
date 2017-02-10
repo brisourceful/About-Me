@@ -86,7 +86,7 @@ for (var j = 0; j < 6; j++){
     }
   }
   if (someAnswer === true) {
-    confirm('Congratulations! You got it!');
+    confirm('Congratulations! You got it! Other possible correct answers are California, New York, Massachusetts.');
     score++;
     break;
   } else {
