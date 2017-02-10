@@ -64,25 +64,27 @@ function questionE(){
   }
 };
 
-var quizResponseSix = parseInt(prompt('Please Answer with a Number i.e. 1, 10, 100. How many Pokemon has Brianna caught?'));
+function questionF() {
+  var quizResponseSix = parseInt(prompt('Please Answer with a Number i.e. 1, 10, 100. How many Pokemon has Brianna caught?'));
 
-var numberAnswer = 131;
+  var numberAnswer = 131;
 
-for (var i = 0; i < 4; i++) {
-  console.log(typeof quizResponseSix);
-  if (quizResponseSix === numberAnswer){
-    confirm('Wow! You guessed right! You must be a Pokemon Master!');
-    score++;
-    break;
+  for (var i = 0; i < 4; i++) {
+    console.log(typeof quizResponseSix);
+    if (quizResponseSix === numberAnswer){
+      confirm('Wow! You guessed right! You must be a Pokemon Master!');
+      score++;
+      break;
+    }
+
+    else if (quizResponseSix > numberAnswer) {
+      quizResponseSix = parseInt(prompt('That\'s too high! I\'m not a Pokemon Master yet. Guess again.'));
+
+    } else {
+      quizResponseSix = parseInt(prompt('That\s too low! I\'ve got more Pokemon than that. Guess again.'));
+    }
   }
-
-  else if (quizResponseSix > numberAnswer) {
-    quizResponseSix = parseInt(prompt('That\'s too high! I\'m not a Pokemon Master yet. Guess again.'));
-
-  } else {
-    quizResponseSix = parseInt(prompt('That\s too low! I\'ve got more Pokemon than that. Guess again.'));
-  }
-}
+};
 
 var statesArray = ['CALIFORNIA', 'NEW YORK', 'MASSACHUSETTS'];
 
