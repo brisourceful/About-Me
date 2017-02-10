@@ -53,14 +53,16 @@ function questionD(){
   }
 };
 
-var quizResponseFive = prompt('Please Answer with Yes or No. Does Brianna like Marmite?').toLowerCase();
+function questionE(){
+  var quizResponseFive = prompt('Please Answer with Yes or No. Does Brianna like Marmite?').toLowerCase();
 
-if (quizResponseFive === 'n' || quizResponseFive === 'no'){
-  console.log('You\'re right! That shit is gross af.');
-  score++;
-} else {
-  console.log ('Are you nuts?? That stuff is vile and she does not like it.');
-}
+  if (quizResponseFive === 'n' || quizResponseFive === 'no'){
+    console.log('You\'re right! That shit is gross af.');
+    score++;
+  } else {
+    console.log ('Are you nuts?? That stuff is vile and she does not like it.');
+  }
+};
 
 var quizResponseSix = parseInt(prompt('Please Answer with a Number i.e. 1, 10, 100. How many Pokemon has Brianna caught?'));
 
