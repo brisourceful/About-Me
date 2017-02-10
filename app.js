@@ -42,14 +42,17 @@ function questionC(){
   }
 };
 
-var quizResponseFour = prompt('Please Answer with Yes or No. Did Brianna live in Thailand?').toLowerCase();
+function questionD(){
+  var quizResponseFour = prompt('Please Answer with Yes or No. Did Brianna live in Thailand?').toLowerCase();
 
-if (quizResponseFour === 'y' || quizResponseFour === 'yes'){
-  console.log('You\'re right! She lived in Thailand for one year.');
-  score++;
-} else {
-  console.log ('You did not guess correctly. She did live in Thailand.');
-}
+  if (quizResponseFour === 'y' || quizResponseFour === 'yes'){
+    console.log('You\'re right! She lived in Thailand for one year.');
+    score++;
+  } else {
+    console.log ('You did not guess correctly. She did live in Thailand.');
+  }
+};
+
 var quizResponseFive = prompt('Please Answer with Yes or No. Does Brianna like Marmite?').toLowerCase();
 
 if (quizResponseFive === 'n' || quizResponseFive === 'no'){
