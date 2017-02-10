@@ -67,9 +67,8 @@ for (var i = 0; i < 4; i++) {
 
   else if (quizResponseSix > numberAnswer) {
     quizResponseSix = parseInt(prompt('That\'s too high! I\'m not a Pokemon Master yet. Guess again.'));
-  }
 
-  else {
+  } else {
     quizResponseSix = parseInt(prompt('That\s too low! I\'ve got more Pokemon than that. Guess again.'));
   }
 }
