@@ -86,25 +86,28 @@ function questionF() {
   }
 };
 
-var statesArray = ['CALIFORNIA', 'NEW YORK', 'MASSACHUSETTS'];
+function questionG(){
+  var statesArray = ['CALIFORNIA', 'NEW YORK', 'MASSACHUSETTS'];
 
-for (var j = 0; j < 6; j++){
-  var quizResponseSeven = prompt('Please Answer with multiple choice. What states has Brianna lived in besides Washington?').toUpperCase();
-  var someAnswer = false;
-  for (var i = 0; i < statesArray.length; i++) {
-    if (statesArray[i] === quizResponseSeven) {
-      someAnswer = true;
+  for (var j = 0; j < 6; j++){
+    var quizResponseSeven = prompt('Please Answer with multiple choice. What states has Brianna lived in besides Washington?').toUpperCase();
+    var someAnswer = false;
+    for (var i = 0; i < statesArray.length; i++) {
+      if (statesArray[i] === quizResponseSeven) {
+        someAnswer = true;
+        break;
+      }
+    }
+    if (someAnswer === true) {
+      confirm('Congratulations! You got it! Other possible correct answers are California, New York, Massachusetts.');
+      score++;
       break;
+    } else {
+      alert('Sorry! Try again.');
     }
   }
-  if (someAnswer === true) {
-    confirm('Congratulations! You got it! Other possible correct answers are California, New York, Massachusetts.');
-    score++;
-    break;
-  } else {
-    alert('Sorry! Try again.');
-  }
-}
+};
+
 confirm('You got ' + score + ' out of 7 correct, ' + username + '. Thanks for playing!');
 
 // var names = ['Adam', 'Amanda', 'Mika'];
