@@ -10,14 +10,16 @@ if (confirmQuiz) {
   console.log ('Too Bad, you don\'t get a choice.');
 }
 
-var quizResponseOne = prompt('Please Answer with Yes or No. Does Brianna have a sibiling?').toLowerCase();
-//quizResponseOne = quizResponseOne.toLowerCase();
-if (quizResponseOne === 'y' || quizResponseOne === 'yes') {
-  console.log('Awesome! You are correct!');
-  score++;
-} else {
-  console.log ('Too Bad, you were wrong. Brianna has a sister, named Rachel.');
-}
+function questionA(){
+  var quizResponseOne = prompt('Please Answer with Yes or No. Does Brianna have a sibiling?').toLowerCase();
+  //quizResponseOne = quizResponseOne.toLowerCase();
+  if (quizResponseOne === 'y' || quizResponseOne === 'yes') {
+    console.log('Awesome! You are correct!');
+    score++;
+  } else {
+    console.log ('Too Bad, you were wrong. Brianna has a sister, named Rachel.');
+  }
+};
 
 var quizResponseTwo = prompt('Please Answer with Yes or No. Is Brianna learning German?').toLowerCase();
 
