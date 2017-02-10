@@ -21,14 +21,16 @@ function questionA(){
   }
 };
 
-var quizResponseTwo = prompt('Please Answer with Yes or No. Is Brianna learning German?').toLowerCase();
+function questionB(){
+  var quizResponseTwo = prompt('Please Answer with Yes or No. Is Brianna learning German?').toLowerCase();
 
-if (quizResponseTwo === 'y' || quizResponseTwo === 'yes'){
-  console.log('Ja, richtig! She is learning German.');
-  score++;
-} else {
-  console.log ('Falsch! She is learning German.');
-}
+  if (quizResponseTwo === 'y' || quizResponseTwo === 'yes'){
+    console.log('Ja, richtig! She is learning German.');
+    score++;
+  } else {
+    console.log ('Falsch! She is learning German.');
+  }
+};
 
 var quizResponseThree = prompt('Please Answer with Yes or No. Has Brianna travelled to Mexico?').toLowerCase();
 
