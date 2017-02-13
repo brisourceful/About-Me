@@ -3,20 +3,31 @@ html, body {
   margin: 0px;
 }
 
+.navigation li {
+  display: inline-block;
+  text-align: center;
+  margin: 0px;
+  list-style: none;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #BBB8B7;
+}
+
 p {
-  font-family: 'Cormorant Infant', serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 20px;
 
 }
 
 ul {
-  font-family: 'Cormorant Infant', serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 20px;
 
 }
 
 ol {
-  font-family: 'Cormorant Infant', serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 20px;
 
 }
