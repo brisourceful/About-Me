@@ -2,10 +2,10 @@
 var score = 0;
 var confirmQuiz = confirm('Hello, would you like to take a quiz about me?');
 
-var username = prompt('Great! What\'s your name?');
-
 if (confirmQuiz) {
   console.log('Awesome! Lets get started!');
+  var username = prompt('Great! What\'s your name?');
+  takeQuiz();
 } else {
   console.log ('Too Bad, you don\'t get a choice.');
 }
@@ -107,13 +107,14 @@ function questionG(){
     }
   }
 };
+function takeQuiz () {
+  questionA();
+  questionB();
+  questionC();
+  questionD();
+  questionE();
+  questionF();
+  questionG();
 
-questionA();
-questionB();
-questionC();
-questionD();
-questionE();
-questionF();
-questionG();
-
-confirm('You got ' + score + ' out of 7 correct, ' + username + '. Thanks for playing!');
+  confirm('You got ' + score + ' out of 7 correct, ' + username + '. Thanks for playing!');
+}
